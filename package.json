@@ -1,27 +1,43 @@
 {
-  "name": "astradb-rag",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.6"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
-  }
+    "name": "astradb-rag",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "seed": "ts-node ./src/scripts/loadDb2.ts",
+        "test-script": "ts-node ./src/scripts/testScript.ts"
+    },
+    "dependencies": {
+        "@ai-sdk/google": "^1.1.10",
+        "@datastax/astra-db-ts": "^1.5.0",
+        "@huggingface/inference": "^2.8.1",
+        "@huggingface/transformers": "^3.3.2",
+        "@langchain/community": "^0.3.27",
+        "@langchain/core": "^0.3.36",
+        "@xenova/transformers": "^2.17.2",
+        "ai": "^4.1.25",
+        "dotenv": "^16.4.7",
+        "langchain": "^0.3.14",
+        "next": "15.1.6",
+        "openai": "^4.80.1",
+        "pdf-parse": "^1.1.1",
+        "puppeteer": "^24.1.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "ts-node": "^10.9.2"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "eslint": "^9",
+        "eslint-config-next": "15.1.6",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
 }
